@@ -55,20 +55,20 @@ drive.mount('/content/drive')
 
 - Model kaydedilir ve test seti ile doğruluk ölçülür.
 
-Örnek kullanım:
+- Örnek kullanım:
 
-Model eğitimi
-history = model.fit(X_train, y_train_cat, validation_data=(X_test, y_test_cat), epochs=100)
+    - Model eğitimi
+      history = model.fit(X_train, y_train_cat, validation_data=(X_test, y_test_cat), epochs=100)
 
-Model kaydetme
-model.save("/content/drive/MyDrive/csi_har.h5")
+    - Model kaydetme
+      model.save("/content/drive/MyDrive/csi_har.h5")
 
-**Katkıda Bulunma**
+**Katkıda Bulunma:**
 
-Pull request ile katkıda bulunabilirsiniz.
+- Pull request ile katkıda bulunabilirsiniz.
 
-Lütfen mevcut kod yapısına ve standartlara uygun değişiklikler yapın.
+- Lütfen mevcut kod yapısına ve standartlara uygun değişiklikler yapın.
 
-**Lisans**
+**Lisans:**
 
 Bu proje MIT Lisansı ile lisanslanmıştır.
