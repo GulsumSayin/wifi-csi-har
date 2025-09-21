@@ -1,14 +1,23 @@
-# Wi-Fi Kanal Durumu Bilgisine (CSI) Dayalı İnsan Aktivitesi Tanıma Projesi
+# 📡 Wi-Fi Kanal Durumu Bilgisine (CSI) Dayalı İnsan Aktivitesi Tanıma Projesi
 
-**Proje Hakkında**
+## 📖 Proje Hakkında
 
-Bu proje, Wi-Fi Kanal Durumu Bilgisi (CSI) kullanarak insan aktivitelerini tanımayı amaçlamaktadır. CSI, Wi-Fi sinyallerinin ortamda geçerken uğradığı değişiklikleri ölçer; bu değişiklikler, insanların hareketlerinden kaynaklanır.
+Bu proje, Wi-Fi Kanal Durumu Bilgisi (CSI) kullanarak insan aktivitelerini tanımayı amaçlamaktadır.
+CSI, Wi-Fi sinyallerinin ortamda geçerken uğradığı değişiklikleri ölçer; bu değişiklikler insan hareketlerinden kaynaklanır.
 
-Veri seti, farklı odalarda 7 farklı aktiviteyi içermektedir: yürüme, oturma, ayakta durma, yatma, kalkma, yere inme ve boş oda. Her CSI paketi, aktivite etiketi ile eşlenmiş durumdadır.
+Veri seti, farklı odalarda 7 farklı aktiviteyi içermektedir:
+
+🚶‍♂️ Yürüme
+💺 Oturma
+🧍‍♂️ Ayakta durma
+🛌 Yatma
+↗️ Kalkma
+↘️ Yere inme
+🏠 Boş oda
 
 Projede kullanılan derin öğrenme modelleri, bu zaman serisi CSI verilerini işleyerek her paket için doğru aktivite sınıfını tahmin eder. Böylece kablosuz sinyaller üzerinden insanların günlük hareketlerini doğru ve gizlilik dostu bir şekilde tanımak mümkün olur.
 
-**Amaç:**
+## 🎯 Amaç
 
 - İnsan aktivitelerini kablosuz sinyaller üzerinden tespit etmek.
 
@@ -16,7 +25,7 @@ Projede kullanılan derin öğrenme modelleri, bu zaman serisi CSI verilerini i�
 
 - Derin öğrenme modelleri ile yüksek doğruluk sağlamak.
 
-**Veri Seti:**
+## 📂 Veri Seti
 
 - HAR with Wi-Fi CSI veri seti kullanılmıştır.
 
@@ -34,25 +43,22 @@ room2/
     ...
 
 
-**Kurulum:**
+## ⚙️ Kurulum
 
 - Depoyu klonlayın:
-
+  ```bash
   git clone https://github.com/GulsumSayin/wifi-csi-har.git
 
-
 - Gerekli Python paketlerini yükleyin:
-
+  ```bash
   pip install numpy pandas scikit-learn tensorflow matplotlib
 
-
 - Colab kullanıyorsanız Drive’ı bağlayın:
-
+   ```bash
    from google.colab import drive
-  
    drive.mount('/content/drive')
 
-**Kullanım:**
+## 🛠️ Kullanım
 
 - Veri yükleme ve ön işleme yapılır.
 
@@ -61,19 +67,19 @@ room2/
 - Model kaydedilir ve test seti ile doğruluk ölçülür.
 
 - Örnek kullanım:
+    ```bash
+    # Model eğitimi 
+    history = model.fit(X_train, y_train_cat, validation_data=(X_test, y_test_cat), epochs=100)
 
-    - Model eğitimi 
-      history = model.fit(X_train, y_train_cat, validation_data=(X_test, y_test_cat), epochs=100)
+    # Model kaydetme
+    model.save("/content/drive/MyDrive/csi_har.h5")
 
-    - Model kaydetme
-      model.save("/content/drive/MyDrive/csi_har.h5")
-
-**Katkıda Bulunma:**
+## 🤝 Katkıda Bulunma
 
 - Pull request ile katkıda bulunabilirsiniz.
 
 - Lütfen mevcut kod yapısına ve standartlara uygun değişiklikler yapın.
 
-**Lisans:**
+## 📄 Lisans
 
 Bu proje MIT Lisansı ile lisanslanmıştır.
