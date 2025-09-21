@@ -34,18 +34,18 @@ room2/
 
 - Depoyu klonlayın:
 
-git clone https://github.com/GulsumSayin/wifi-csi-har.git
+  git clone https://github.com/GulsumSayin/wifi-csi-har.git
 
 
 - Gerekli Python paketlerini yükleyin:
 
-pip install numpy pandas scikit-learn tensorflow matplotlib
+  pip install numpy pandas scikit-learn tensorflow matplotlib
 
 
 - Colab kullanıyorsanız Drive’ı bağlayın:
 
-from google.colab import drive
-drive.mount('/content/drive')
+  from google.colab import drive
+  drive.mount('/content/drive')
 
 **Kullanım:**
 
@@ -57,7 +57,7 @@ drive.mount('/content/drive')
 
 - Örnek kullanım:
 
-    - Model eğitimi
+    - Model eğitimi 
       history = model.fit(X_train, y_train_cat, validation_data=(X_test, y_test_cat), epochs=100)
 
     - Model kaydetme
