@@ -34,7 +34,7 @@ room2/
 
 - Depoyu klonlayın:
 
-git clone https://github.com/kullaniciadi/wifi-csi-har.git
+git clone https://github.com/GulsumSayin/wifi-csi-har.git
 
 
 - Gerekli Python paketlerini yükleyin:
@@ -57,9 +57,10 @@ drive.mount('/content/drive')
 
 Örnek kullanım:
 
-# Model eğitimi
+Model eğitimi
 history = model.fit(X_train, y_train_cat, validation_data=(X_test, y_test_cat), epochs=100)
-# Model kaydetme
+
+Model kaydetme
 model.save("/content/drive/MyDrive/csi_har.h5")
 
 **Katkıda Bulunma**
