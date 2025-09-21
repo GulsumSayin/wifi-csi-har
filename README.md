@@ -2,7 +2,11 @@
 
 **Proje Hakkında**
 
-Bu proje, Wi-Fi Kanal Durumu Bilgisi (CSI) kullanarak insan aktivitelerini tanımayı amaçlamaktadır. CSI, Wi-Fi sinyallerinin ortamda nasıl değiştiğini gösterir ve bu değişiklikler makine öğrenimi ve derin öğrenme yöntemleriyle işlenerek aktiviteler sınıflandırılır.
+Bu proje, Wi-Fi Kanal Durumu Bilgisi (CSI) kullanarak insan aktivitelerini tanımayı amaçlamaktadır. CSI, Wi-Fi sinyallerinin ortamda geçerken uğradığı değişiklikleri ölçer; bu değişiklikler, insanların hareketlerinden kaynaklanır.
+
+Veri seti, farklı odalarda 7 farklı aktiviteyi içermektedir: yürüme, oturma, ayakta durma, yatma, kalkma, yere inme ve boş oda. Her CSI paketi, aktivite etiketi ile eşlenmiş durumdadır.
+
+Projede kullanılan derin öğrenme modelleri, bu zaman serisi CSI verilerini işleyerek her paket için doğru aktivite sınıfını tahmin eder. Böylece kablosuz sinyaller üzerinden insanların günlük hareketlerini doğru ve gizlilik dostu bir şekilde tanımak mümkün olur.
 
 **Amaç:**
 
