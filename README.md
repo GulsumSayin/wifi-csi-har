@@ -22,10 +22,13 @@ Bu proje, Wi-Fi Kanal Durumu Bilgisi (CSI) kullanarak insan aktivitelerini tanı
 
 - Veri yapısı:
 
+
 room1/
+
     1/
         data.csv
         label.csv
+
 room2/
     ...
 
@@ -44,8 +47,9 @@ room2/
 
 - Colab kullanıyorsanız Drive’ı bağlayın:
 
-  from google.colab import drive
-  drive.mount('/content/drive')
+   from google.colab import drive
+  
+   drive.mount('/content/drive')
 
 **Kullanım:**
 
